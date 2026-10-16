@@ -26,4 +26,14 @@ Si il y a une erreur de frappe cela casse la logique car le plats ne peut pas et
 **Reponse :**
 => Dans la table commandes_detail(id_commande,id_plat,quantite) / commandes(id,date);
 
+## Étape 4 – Les habitués
+« Certains clients sont des habitués, je veux les reconnaître. Mais la plupart sont de passage et je ne leur demande rien. »
 
+**Question « Piège » :** Votre clé étrangère est-elle NOT NULL ? Quelle jointure faut-il pour ne perdre aucune commande ?
+
+**Schema relationnel :**
+- CLIENTS(id, nom)
+- COMMANDES(id, date_commande, #id_client?) (modifié)
+
+**Reponse :**
+=> La clé étrangère id_client est facultative car les clients de passage ne sont pas enregistrés. Il faut une jointure externe gauche (LEFT JOIN) pour garder toutes les commandes.

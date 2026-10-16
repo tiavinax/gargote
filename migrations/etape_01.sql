@@ -12,4 +12,4 @@ INSERT INTO plats (libelle, prix, categorie) VALUES
 ('Mi sao', 6000, 'Plat chinois'),
 ('Soupe chinoise', 5000, 'Soupe'),
 ('Mofo gasy (les 4)', 1000, 'Dessert et goûter'),
-('Ranon''ampango', 500, 'Dessert et goûter');
+('Ranon''ampango', 500, 'Boisson');

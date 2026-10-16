@@ -18,3 +18,12 @@ plats ? Donnez un exemple de problème concret.
 => Ici le categorie est en VARCHAR(50) donc c'est un donner inserer a la main dans une formulaire d'ajout de plats.
 Si il y a une erreur de frappe cela casse la logique car le plats ne peut pas etre vu ou compter.
 
+## Étape 3 – Les commandes
+« J'enregistre les commandes : la date, quels plats, et combien de chaque. »
+
+**Question « Piège » :** Où placez-vous la quantité ?
+
+**Reponse :**
+=> Dans la table commandes_detail(id_commande,id_plat,quantite) / commandes(id,date);
+
+
